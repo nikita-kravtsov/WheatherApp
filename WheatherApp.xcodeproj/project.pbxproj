@@ -13,6 +13,8 @@
 		11AA399224630D89003B8ED5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11AA399024630D89003B8ED5 /* Main.storyboard */; };
 		11AA399424630D8C003B8ED5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11AA399324630D8C003B8ED5 /* Assets.xcassets */; };
 		11AA399724630D8C003B8ED5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11AA399524630D8C003B8ED5 /* LaunchScreen.storyboard */; };
+		11AA39A524631936003B8ED5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 11AA39A424631936003B8ED5 /* Default-568h@2x.png */; };
+		11AA39A824632944003B8ED5 /* ViewController + alertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA39A724632944003B8ED5 /* ViewController + alertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		11AA399324630D8C003B8ED5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11AA399624630D8C003B8ED5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11AA399824630D8C003B8ED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11AA39A424631936003B8ED5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		11AA39A724632944003B8ED5 /* ViewController + alertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController + alertController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		11AA398924630D89003B8ED5 /* WheatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				11AA398A24630D89003B8ED5 /* AppDelegate.swift */,
-				11AA398C24630D89003B8ED5 /* SceneDelegate.swift */,
-				11AA398E24630D89003B8ED5 /* ViewController.swift */,
-				11AA399024630D89003B8ED5 /* Main.storyboard */,
-				11AA399324630D8C003B8ED5 /* Assets.xcassets */,
-				11AA399524630D8C003B8ED5 /* LaunchScreen.storyboard */,
-				11AA399824630D8C003B8ED5 /* Info.plist */,
+				11AA39A6246328D8003B8ED5 /* Extensions */,
+				11AA39A124631103003B8ED5 /* Model */,
+				11AA399F246310B0003B8ED5 /* View */,
+				11AA399E24631071003B8ED5 /* Controllers */,
+				11AA39A0246310D6003B8ED5 /* Supporting files */,
 			);
 			path = WheatherApp;
+			sourceTree = "<group>";
+		};
+		11AA399E24631071003B8ED5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				11AA398E24630D89003B8ED5 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		11AA399F246310B0003B8ED5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11AA399024630D89003B8ED5 /* Main.storyboard */,
+				11AA399524630D8C003B8ED5 /* LaunchScreen.storyboard */,
+				11AA39A424631936003B8ED5 /* Default-568h@2x.png */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11AA39A0246310D6003B8ED5 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				11AA399824630D8C003B8ED5 /* Info.plist */,
+				11AA398A24630D89003B8ED5 /* AppDelegate.swift */,
+				11AA398C24630D89003B8ED5 /* SceneDelegate.swift */,
+				11AA399324630D8C003B8ED5 /* Assets.xcassets */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		11AA39A124631103003B8ED5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		11AA39A6246328D8003B8ED5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				11AA39A724632944003B8ED5 /* ViewController + alertController.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11AA399724630D8C003B8ED5 /* LaunchScreen.storyboard in Resources */,
+				11AA39A524631936003B8ED5 /* Default-568h@2x.png in Resources */,
 				11AA399424630D8C003B8ED5 /* Assets.xcassets in Resources */,
 				11AA399224630D89003B8ED5 /* Main.storyboard in Resources */,
 			);
@@ -141,6 +188,7 @@
 				11AA398F24630D89003B8ED5 /* ViewController.swift in Sources */,
 				11AA398B24630D89003B8ED5 /* AppDelegate.swift in Sources */,
 				11AA398D24630D89003B8ED5 /* SceneDelegate.swift in Sources */,
+				11AA39A824632944003B8ED5 /* ViewController + alertController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +334,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G4SCVQG9P5;
-				INFOPLIST_FILE = WheatherApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WheatherApp/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.NikitaKravtsov.WheatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,7 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G4SCVQG9P5;
-				INFOPLIST_FILE = WheatherApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WheatherApp/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +360,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.NikitaKravtsov.WheatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
