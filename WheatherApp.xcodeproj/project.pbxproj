@@ -18,6 +18,7 @@
 		11AA39AA24635FC1003B8ED5 /* NetworkWeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA39A924635FC1003B8ED5 /* NetworkWeatherManager.swift */; };
 		11AA39AC24636149003B8ED5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AA39AB24636149003B8ED5 /* Constants.swift */; };
 		11DD30932464440E002DBB5F /* CurrentWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DD30922464440E002DBB5F /* CurrentWeatherData.swift */; };
+		11DD309524648971002DBB5F /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DD309424648971002DBB5F /* CurrentWeather.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		11AA39A924635FC1003B8ED5 /* NetworkWeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWeatherManager.swift; sourceTree = "<group>"; };
 		11AA39AB24636149003B8ED5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		11DD30922464440E002DBB5F /* CurrentWeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherData.swift; sourceTree = "<group>"; };
+		11DD309424648971002DBB5F /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				11AA39A924635FC1003B8ED5 /* NetworkWeatherManager.swift */,
+				11DD309424648971002DBB5F /* CurrentWeather.swift */,
 				11DD30922464440E002DBB5F /* CurrentWeatherData.swift */,
 			);
 			path = Model;
@@ -196,6 +199,7 @@
 			files = (
 				11AA398F24630D89003B8ED5 /* ViewController.swift in Sources */,
 				11AA398B24630D89003B8ED5 /* AppDelegate.swift in Sources */,
+				11DD309524648971002DBB5F /* CurrentWeather.swift in Sources */,
 				11AA39AA24635FC1003B8ED5 /* NetworkWeatherManager.swift in Sources */,
 				11AA398D24630D89003B8ED5 /* SceneDelegate.swift in Sources */,
 				11AA39A824632944003B8ED5 /* ViewController + alertController.swift in Sources */,
