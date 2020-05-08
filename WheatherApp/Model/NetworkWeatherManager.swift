@@ -7,26 +7,43 @@
 //
 
 import Foundation
+import CoreLocation
 
 struct NetworkWeatherManager {
     
-    var onCompletion: ((CurrentWeather) -> Void)?
-    
-    func fetchCurrentWeather(forCity city: String) {
-        let urlString = "https://api.openweathermap.org/data/2.5/weather?q=\(city)&apikey=\(apiKey)&units=metric"
-        guard let url = URL(string: urlString) else { return }
-        let session = URLSession(configuration: .default)
-        let task = session.dataTask(with: url) { data, response, error in
-            if let data = data {
-                if let currentWheather = self.parseJSON(with: data) {
-                    self.onCompletion?(currentWheather)
-                }
-            }
-        }
-        task.resume()
+    enum RequestType {
+        case cityName(city: String)
+        case coordinate(latitude: CLLocationDegrees, longitude: CLLocationDegrees)
     }
     
-    func parseJSON(with data: Data) -> CurrentWeather? {
+    var onCompletion: ((CurrentWeather) -> Void)?
+    
+    func fetchCurrentWeather(forRequestType requestType: RequestType) {
+        var urlString = ""
+        switch requestType {
+        case .cityName(let city):
+            urlString = "https://api.openweathermap.org/data/2.5/weather?q=\(city)&apikey=\(apiKey)&units=metric"
+            
+        case .coordinate(let latitude, let longitude):
+            urlString = "https://api.openweathermap.org/data/2.5/weather?lat=\(latitude)&lon=\(longitude)&apikey=\(apiKey)&units=metric"
+        }
+        perfomeRequest(withURLString: urlString)
+    }
+    
+    fileprivate func perfomeRequest(withURLString urlString: String) {
+        guard let url = URL(string: urlString) else { return }
+               let session = URLSession(configuration: .default)
+               let task = session.dataTask(with: url) { data, response, error in
+                   if let data = data {
+                       if let currentWheather = self.parseJSON(with: data) {
+                           self.onCompletion?(currentWheather)
+                       }
+                   }
+               }
+               task.resume()
+    }
+    
+    fileprivate func parseJSON(with data: Data) -> CurrentWeather? {
         
         let decoder = JSONDecoder()
         do {
