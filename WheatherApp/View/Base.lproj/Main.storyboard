@@ -22,8 +22,8 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rZj-Xb-Cff">
                                 <rect key="frame" x="122" y="64" width="170" height="283.66666666666669"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud.rain.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jK1-y7-asd">
-                                        <rect key="frame" x="0.0" y="0.6666666666666714" width="170" height="171"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nosign" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jK1-y7-asd">
+                                        <rect key="frame" x="0.0" y="1" width="170" height="168.66666666666666"/>
                                         <color key="tintColor" name="ColorLightOrDark"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="170" id="ESt-QZ-hwM"/>
@@ -118,8 +118,8 @@
     </scenes>
     <resources>
         <image name="background" width="375" height="667"/>
-        <image name="cloud.rain.fill" catalog="system" width="128" height="125"/>
         <image name="magnifyingglass.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="nosign" catalog="system" width="128" height="121"/>
         <namedColor name="ColorLightOrDark">
             <color red="0.95300000905990601" green="1" blue="0.67100000381469727" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
